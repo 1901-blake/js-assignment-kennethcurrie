@@ -3,7 +3,7 @@ Define function: fib(n)
 Return the nth number in the fibonacci sequence. */
 function fib(n) {
     if(typeof(n)===typeof(5)){
-        n = Math.trunc(n);-1
+        n = Math.trunc(n);
     }
     if(n>0){
         let current = 1;
