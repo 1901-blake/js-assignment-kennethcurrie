@@ -32,5 +32,7 @@ function bubbleSort(numArray) {
         return numArray;
   }
 }
+
+//TestCode
 let sortedArray = bubbleSort([8,5,4,7,3,6,"2",1,0,9,0xa])
 console.log(sortedArray);

@@ -21,6 +21,7 @@ function fib(n) {
     }
 }
 
+//TestCode
 console.log(fib("a"));
 console.log(fib(-1));
 console.log(fib(0));
