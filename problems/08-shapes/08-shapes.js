@@ -28,16 +28,17 @@ function printShape(shape, height, character) {
   }
   Math.trunc(height);
   character = character.substring(0,1);
-  if(shape==="triangle"){
+  switch (shape) {
+    case "triangle":
     for (let x = 0; x < height; x++) {
       let line = "";
       for (let y = 0; y < x+1; y++){
         line = line.concat(character);
       }
       console.log(line);
-    }
-  }
-  if(shape==="square"){
+    }      
+      break;
+    case "square":
     for (let x = 0; x < height; x++) {
       let line = "";
       for (let y = 0; y < height; y++){
@@ -45,8 +46,8 @@ function printShape(shape, height, character) {
       }
       console.log(line);
     }
-  }
-  if(shape==="diamond"){
+      break;
+    case "diamond":
     if(height%2===0){
       for(x=0; x<height; x+=2){
         let line ="";
@@ -79,6 +80,10 @@ function printShape(shape, height, character) {
         console.log(pad(line,height));
       }
     }
+      break;
+    default:
+    console.log("Invalid Shape");
+      break;
   }
 }
 function pad(partial,length){
